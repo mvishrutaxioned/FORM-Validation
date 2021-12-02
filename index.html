@@ -52,6 +52,76 @@
             <p>Get the latest news on our events, exclusive offers and content</p>
           </div>
         </section>
+        <section class="newsletter">
+          <div class="wrapper">
+            <small>EuroFinance<span> > </span><strong><a href="#FIXME" title="Newsletter Sign Up">Newslettter sign up</a></strong></small>
+            <h2>Enter your details to subscribe to our newsletter</h2>
+            <form action="#FIXME" action="POST" id="newsletterForm">
+              <div>
+                <label for="firstName">First Name</label>
+                <input type="text" name="fName" id="firstName">
+                <span class="error firstName">Error</span>
+              </div>
+              <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lName" id="lastName">
+                <span class="error lastName">Error</span>
+              </div>
+              <div>
+                <label for="position">Position</label>
+                <input type="number" name="position" id="position">
+                <span class="error position">Error</span>
+              </div>
+              <div>
+                <label for="company">Company</label>
+                <input type="text" name="company" id="company">
+                <span class="error company">Error</span>
+              </div>
+              <div>
+                <label for="comType">Company Type</label>
+                <select name="comType" id="comType">
+                  <option value="">- select -</option>
+                  <option value="company 1">Company 1</option>
+                  <option value="company 2">Company 2</option>
+                  <option value="company 3">Company 3</option>
+                </select>
+                <span class="error comType">Error</span>
+              </div>
+              <div>
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                  <option value="">- Choose -</option>
+                  <option value="India">India</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Korea">Korea</option>
+                  <option value="USA">USA</option>
+                </select>
+                <span class="error country">Error</span>
+              </div>
+              <div>
+                <label for="email">Work email</label>
+                <input type="email" name="email" id="email">
+                <span class="error email">Error</span>
+              </div>
+              <div>
+                <p>EuroFinance is part of The Economist Group. Would you also like to receive information on subscription offers. Economist events and other products via email?</p>
+                <div class="checks">
+                  <input type="checkbox" class="check" name="euro" id="yes">
+                  <label for="yes">Yes</label>
+                </div>
+                <div class="checks">
+                  <input type="checkbox" class="check" name="euro" id="no">
+                  <label for="no">No</label>
+                </div>
+                <span class="error euro">Error</span>
+              </div>
+              <div>
+                <p>The Economist Group is a global organisation and operates a strict privacy policy around the world. You can view our privacy policy at <a href="https://www.economistgroup.com/privacy" title="www.economistgroup.com/privacy">www.economistgroup.com/privacy</a></p>
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </section>
       </main>
       <!--main section end-->
       <!--footer section start-->
