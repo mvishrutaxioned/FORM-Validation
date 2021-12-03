@@ -368,11 +368,164 @@ select { cursor: pointer; }
   footer styling starts here
 =================================*/ 
 
+footer { background: #1f58a0; }
 
+.fContent {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
 
+.fContent .logo {
+  padding: 0 0 5px 0;
+  margin: 0;
+  border-bottom: 1px solid #2977c0;
+}
 
+.fContent .logo a {
+  padding-right: 20px;
+  font-size: 30px;
+}
 
+.fContent > li {
+  width: 100%;
+  padding-right: 30px;
+  margin-right: 30px;
+  color: #fff;
+}
 
+.fContent > li:nth-of-type(2),
+.fContent > li:nth-of-type(3) { margin-top: 10px; }
+
+.fContent > li:nth-of-type(2) h2,
+.fContent > li:nth-of-type(3) h2 { margin-bottom: 10px; }
+
+.fContent > li:nth-of-type(2) ul li a {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: .6px;
+}
+
+.fContent li small {
+  padding-top: 40px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.fContent li small a {
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.fContent li:nth-of-type(2) > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  line-height: 15px;
+}
+
+.fContent li:nth-of-type(2) > ul li a:hover,
+.fContent li small a:hover {
+  color: #a6bbbb;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.fContent li:nth-of-type(3) ul {
+  width: 10px;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fContent li:nth-of-type(3) ul li { 
+  width: 30px;
+  height: 27px;
+  padding: 0;
+  margin: 0 15px 0 0;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #fff;
+}
+
+.fContent li:nth-of-type(3) ul li a {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.fContent li:nth-of-type(3) ul li:nth-of-type(1) a {color: #225fab; }
+.fContent li:nth-of-type(3) ul li:nth-of-type(2) a {color: #369fe3; }
+.fContent li:nth-of-type(3) ul li:nth-of-type(3) a {color: #e91d2e; }
+.fContent li:nth-of-type(3) ul li:nth-of-type(4) a {color: #1f58a0; }
+
+.fContent li:nth-of-type(3) ul li a:hover {
+  color: #a6bbbb;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.fInfo { background: #18366b; }
+
+.fInfo .wrapper {
+  padding: 6px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.fInfo ul li::after {
+  content: '';
+  width: 1px;
+  height: 10px;
+  position: absolute;
+  top: 7px;
+  right: -6px;
+  background: #a6bbbb;
+}
+
+.fInfo ul li { 
+  margin-right: 8px;
+  position: relative; 
+}
+
+.fInfo ul li a, 
+span {
+  color: #a6bbbb;
+  font-family: sans-serif;
+  font-size: 10px ;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.fInfo ul li a:hover { color: #fff; }
 
  /*=================================
   footer styling ends here
