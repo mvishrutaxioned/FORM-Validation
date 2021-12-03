@@ -18,6 +18,18 @@ $(document).ready(() => {
         }
     }
 
+    // check position function
+    function checkRemains(elem, name, info) {
+        var i = $(`.${name}`)
+        if($(`#${name}`).val() == '') {
+            var msg = `${info} field is required`;
+            displayError(i, msg)
+        } else {
+            displaySuccess(i)
+            return elem = 1
+        }
+    }
+
     // close menu function
     function close() {
         $('nav .wrapper ul').removeClass('showNav');
