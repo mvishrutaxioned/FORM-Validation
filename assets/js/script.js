@@ -42,6 +42,15 @@ $(document).ready(() => {
         }
     }
 
+    // check all function
+    function checkAll(obj) {
+        var value = obj.every((v) => v === 1)
+        if(value) {
+            alert('Thank You!')
+            $('#newsletterForm').trigger('reset');
+        }
+    }
+
     // close menu function
     function close() {
         $('nav .wrapper ul').removeClass('showNav');
