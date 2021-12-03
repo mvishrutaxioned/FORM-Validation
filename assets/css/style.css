@@ -112,10 +112,110 @@ li {
   Header styling starts here
 =================================*/
 
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
 
+/* heading styling starts here */
+.heading .wrapper {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
+.logo a {
+  color: #fff;
+  font-size: 38px;
+}
 
+.heading form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
+.heading input {
+  padding: 8px 25px 8px 8px;
+  border: none;
+  font-size: 11px;
+  outline: none;
+  letter-spacing: .5x;
+}
+
+.heading button,
+.newsletter button {
+  padding: 7px 12px;
+  border: none;
+  background: #369fe3;
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.heading button:hover,
+.newsletter button:hover { background: #225fab; }
+/* heading styling ends here */
+
+/* nav styling starts here */
+nav {
+  padding: 5px 0;
+  margin: 13px 0;
+  background: #2977c0;
+}
+
+.menu, 
+.close { 
+  display: none; 
+  cursor: pointer;
+}
+
+nav ul li {
+  margin: 0 12px;
+  position: relative;
+}
+
+nav ul li a:after {
+  content: '';
+  width: 1px;
+  height: 16px;
+  position: absolute;
+  top: 4px;
+  right: -15px;
+  background: #dddfdf;
+}
+
+nav ul li:last-child a:after { width: 0; }
+
+nav ul li a {
+  color: #dddfdf;
+  font-family: sans-serif;
+  font-size: 11px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+nav ul li a:hover { color: #fff; }
+/* nav styling ends here */
 
 /*=================================
   Header styling ends here
