@@ -281,6 +281,27 @@ nav ul li a:hover { color: #fff; }
 .newsletter {
   padding-bottom: 50px;
   margin: 20px 0 50px 0;
+  position: relative;
+}
+
+.newsletter::after,
+.fContent::after {
+  content: '\f106';
+  padding: 6px 12px;
+  border-radius: 50%;
+  position: absolute;
+  background: #000;
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 22px;
+  opacity: .3;
+  cursor: pointer;
+}
+
+.newsletter::after {
+  top: 19%;
+  right: 2%;
 }
 
 .newsletter small,
@@ -382,7 +403,10 @@ select { cursor: pointer; }
   footer styling starts here
 =================================*/ 
 
-footer { background: #1f58a0; }
+footer { 
+  position: relative;
+  background: #1f58a0; 
+}
 
 .fContent {
   padding: 30px 0;
@@ -398,6 +422,11 @@ footer { background: #1f58a0; }
   padding-right: 20px;
   margin: 0;
   border-bottom: 1px solid #2977c0;
+}
+
+.fContent::after {
+  right: 2%;
+  bottom: 19%;
 }
 
 .fContent .logo a { position: relative; }
