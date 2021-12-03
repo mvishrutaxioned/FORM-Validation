@@ -256,6 +256,110 @@ nav ul li a:hover { color: #fff; }
 }
 /* banner styling ends here */
 
+/* newsletter form styling starts here */
+
+.newsletter {
+  padding-bottom: 50px;
+  margin: 20px 0 50px 0;
+}
+
+.newsletter small,
+.newsletter small strong a {
+  color: #000;
+  font-size: 11px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.newsletter small strong a { letter-spacing: .7px; }
+.newsletter small strong a:hover { margin-left: 10px; }
+.newsletter span { margin: 0 8px; }
+
+.newsletter h2 {
+  margin: 12px 0 16px 0;
+  color: #2977c0;
+  font-size: 28px;
+}
+
+.newsletter form div {
+  margin-bottom: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.newsletter label {
+  margin-bottom: 7px;
+  font-family: sans-serif;
+  font-size: 11px;
+  letter-spacing: .5px;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"],
+.newsletter input[type="number"],
+.newsletter select {
+  width: 32%;
+  padding: 7px 0;
+  border: none;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 9px -5px #000;
+  box-shadow: inset 0 0 9px -5px #000;
+  font-size: 11px;
+  text-indent: 6px;
+  outline: none;
+}
+
+.newsletter select {
+  background: #369fe3;
+  color: #fff;
+}
+
+.error {
+  display: none;
+  color: #e91d2e;
+  font-size: 10px;
+}
+
+.newsletter p {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: .7px;
+}
+
+.newsletter p a { 
+  -webkit-transition: .5s ease; 
+  -o-transition: .5s ease; 
+  transition: .5s ease; 
+}
+
+.newsletter p a:hover { margin-left: 10px; }
+
+.newsletter .checks { 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: normal; 
+  -ms-flex-direction: row; 
+  flex-direction: row; 
+}
+
+.newsletter .checks label { margin: 3px 0 0 5px; }
+.newsletter .checks:nth-of-type(2) { margin-bottom: 20px; }
+input[type="checkbox"],
+select { cursor: pointer; }
+
+.newsletter button {
+  width: 19%;
+  border-radius: 3px;
+}
+
+/* newsletter form styling ends here */
+
 /*=================================
   main styling ends here
 =================================*/
