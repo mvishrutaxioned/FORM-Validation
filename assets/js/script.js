@@ -2,6 +2,7 @@ $(document).ready(() => {
 
     // regex variable
     var regexName = /[^a-zA-z]/g;
+    var regexEmail = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
 
     // checkout first name function
     function checkName(elem, name, info) {
@@ -41,6 +42,25 @@ $(document).ready(() => {
             return elem = 1
         }
     }
+
+    // check email function
+    function checkEmail(elem, name, info) {
+        var email = $(`#${name}`).val()
+        var i = $(`.${name}`)
+        if($(`#${name}`).val() == '') {
+            var msg = `${info} field is required`;
+            displayError(i, msg)
+        } else if (!regexEmail.test(email)){
+            var msg = `Please enter valid ${info}`;
+            displayError(i, msg);
+        } else {
+            displaySuccess(i)
+            return elem = 1
+        }
+    }
+
+    // focus out function
+    
 
     // check all function
     function checkAll(obj) {
@@ -93,6 +113,14 @@ $(document).ready(() => {
     });
     $('.close').click(close)
 
+    $('#firstName').blur(e => $(this).focusout(checkName(firstName, 'firstName', 'First name')))
+    $('#lastName').blur(e => $(this).focusout(checkName(lastName, 'lastName', 'Last name')))
+    $('#position').blur(e => $(this).focusout(checkRemains(position, 'position', 'Position')))
+    $('#company').blur(e => $(this).focusout(checkName(company, 'company', 'Company')))
+    $('#companyType').blur(e => $(this).focusout(checkRemains(companyType, 'companyType', 'Company type')))
+    $('#country').blur(e => $(this).focusout(checkRemains(country, 'country', 'Country')))
+    $('#email').blur(e => $(this).focusout(checkEmail(email, 'email', 'Email')))
+
     // call this function inside submit form
     function callThis() {
 
@@ -111,7 +139,7 @@ $(document).ready(() => {
         var c = checkName(company, 'company', 'Company')
         var ct = checkRemains(companyType, 'companyType', 'Company type')
         var cn = checkRemains(country, 'country', 'Country')
-        var e = checkRemains(email, 'email', 'Email')
+        var e = checkEmail(email, 'email', 'Email')
         var ch = checkBox(checkbox)
 
         checkAll([f,l,p,c,ct,cn,e,ch])
