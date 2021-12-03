@@ -51,6 +51,19 @@ $(document).ready(() => {
         }
     }
 
+
+    // display error function
+    function displayError(i, msg) {
+        i.text(msg)
+        i.show();
+    }
+
+    // display success function
+    function displaySuccess(i) {
+        i.empty()
+        i.hide()
+    }
+
     // close menu function
     function close() {
         $('nav .wrapper ul').removeClass('showNav');
