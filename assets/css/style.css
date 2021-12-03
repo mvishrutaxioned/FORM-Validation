@@ -135,7 +135,11 @@ header {
 .logo a {
   color: #fff;
   font-size: 38px;
+  transition: .5s ease;
 }
+
+.logo a:hover,
+.fContent .logo a:hover { color: #a6bbbb; }
 
 .heading form {
   width: 100%;
@@ -672,6 +676,21 @@ span {
   }
 
   .fInfo span { margin-top: 10px; }
+
+  .logo a:hover { color: #fff; }
+  .heading button:hover,
+  .newsletter button:hover { background: #369fe3; }
+  nav ul li a:hover { color: #dddfdf; }
+  .newsletter small strong a:hover { margin-left: 0; }
+  .newsletter p a:hover { margin-left: 0; }
+  .fContent li:nth-of-type(2) > ul li a:hover,
+  .fContent li small a:hover { color: #fff }
+  .fContent li:nth-of-type(3) ul li:nth-of-type(1) a:hover {color: #225fab; }
+  .fContent li:nth-of-type(3) ul li:nth-of-type(2) a:hover {color: #369fe3; }
+  .fContent li:nth-of-type(3) ul li:nth-of-type(3) a:hover {color: #e91d2e; }
+  .fContent li:nth-of-type(3) ul li:nth-of-type(4) a:hover {color: #1f58a0; }
+  .fInfo ul li a:hover { color: #a6bbbb; }
+
 }
 
 /*media query for 320px starts here*/
