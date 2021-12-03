@@ -1,6 +1,22 @@
 $(document).ready(() => {
 
-    
+    // regex variable
+    var regexName = /[^a-zA-z]/g;
+
+    // checkout first name function
+    function checkName(elem, name, info) {
+        var i = $(`.${name}`)
+        if($(`#${name}`).val() == '') {
+            var msg = `${info} field is required`;
+            displayError(i, msg)
+        } else if (regexName.test($(`#${name}`).val())){
+            var msg = `Please enter valid ${info}`;
+            displayError(i, msg);
+        } else {
+            displaySuccess(i)
+            return elem = 1
+        }
+    }
 
     // close menu function
     function close() {
