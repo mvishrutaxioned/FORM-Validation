@@ -30,6 +30,18 @@ $(document).ready(() => {
         }
     }
 
+    // check box function
+    function checkBox(elem) {
+        var i = $('.euro')
+        var radio = $("input[name='euro']:checked").val();
+        if(!radio) {
+            displayError(i, 'Yes or No is required');
+        } else {
+            displaySuccess(i)
+            return elem = 1
+        }
+    }
+
     // close menu function
     function close() {
         $('nav .wrapper ul').removeClass('showNav');
