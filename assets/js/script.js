@@ -2,6 +2,35 @@ $(document).ready(() => {
 
     
 
+    // close menu function
+    function close() {
+        $('nav .wrapper ul').removeClass('showNav');
+        $('html, body').css("overflow", "visible");
+    }
+
+
+    // event listeners
+
+    // check only single checkbox function
+    $('.check').click(function() {
+        $('.check').not(this).prop('checked', false);
+    });
+
+    // open menu
+    $('.menu').click((e) => {
+        e.preventDefault()
+
+        $('nav .wrapper ul').addClass('showNav');
+        $('html, body').css("overflow", "hidden");
+    })
+
+    // close menu
+    $(document).mouseup((e) => {
+        var container = $("nav .wrapper ul");
+        if (!container.is(e.target) && container.has(e.target).length === 0) return close()
+    });
+    $('.close').click(close)
+
     // call this function inside submit form
     function callThis() {
 
